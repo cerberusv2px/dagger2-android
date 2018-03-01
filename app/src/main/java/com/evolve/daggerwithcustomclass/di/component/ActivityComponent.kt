@@ -11,8 +11,8 @@ import dagger.Component
 
 @ActivityScope
 @Component(
-        dependencies = [(RandomUserComponent::class)],
-        modules = [(ActivityModule::class)]
+    dependencies = [(RandomUserComponent::class)],
+    modules = [(ActivityModule::class)]
 )
 interface ActivityComponent {
 

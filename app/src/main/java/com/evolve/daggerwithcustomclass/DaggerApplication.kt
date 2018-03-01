@@ -19,11 +19,10 @@ class DaggerApplication : Application() {
         }
     }
 
-
     override fun onCreate() {
         super.onCreate()
         randomUserComponent = DaggerRandomUserComponent.builder()
-                .contextModule(ContextModule(this)).build()
+            .contextModule(ContextModule(this)).build()
     }
 
     fun getRandomUserApplicationComponent(): RandomUserComponent {

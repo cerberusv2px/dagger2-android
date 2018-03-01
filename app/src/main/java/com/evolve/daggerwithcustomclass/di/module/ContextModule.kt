@@ -15,7 +15,7 @@ class ContextModule(var context: Context) {
     @Provides
     @Singleton
     @ApplicationContext
-    fun provideContext() : Context {
+    fun provideContext(): Context {
         return context.applicationContext
     }
 }

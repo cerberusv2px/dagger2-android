@@ -28,14 +28,13 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         val activityComponent = DaggerActivityComponent.builder()
-                .activityModule(ActivityModule(this))
-                .randomUserComponent(DaggerApplication.get(this).getRandomUserApplicationComponent())
-                .build()
+            .activityModule(ActivityModule(this))
+            .randomUserComponent(DaggerApplication.get(this).getRandomUserApplicationComponent())
+            .build()
         activityComponent.inject(this)
 
         Log.e(TAG, picasso.getPicasso())
         Log.e(TAG, randomUserAPI.getRandomUserAPI())
         Log.e(TAG, userRepoImpl.insert(randomUserAPI))
-
     }
 }

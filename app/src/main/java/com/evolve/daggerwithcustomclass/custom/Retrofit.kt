@@ -9,5 +9,4 @@ class Retrofit(okHttpClient: OkHttpClient) {
     fun getRetrofit(): String {
         return "Retrofit"
     }
-
 }

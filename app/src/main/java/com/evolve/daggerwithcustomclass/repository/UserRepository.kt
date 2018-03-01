@@ -8,6 +8,8 @@ import com.evolve.daggerwithcustomclass.custom.RandomUserAPI
 interface UserRepository {
 
     fun insert(randomUserAPI: RandomUserAPI): String
+
     fun getAll(): String
+
     fun getById(): String
 }

@@ -10,7 +10,7 @@ import javax.inject.Singleton
 /**
  * Created by sujin on 2/28/18.
  */
-@Module(includes = arrayOf(OkHttpClientModule::class))
+@Module(includes = [(OkHttpClientModule::class)])
 class RandomUserModule {
 
     @Provides

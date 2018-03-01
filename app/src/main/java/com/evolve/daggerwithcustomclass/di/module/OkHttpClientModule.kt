@@ -13,7 +13,7 @@ import dagger.Provides
 class OkHttpClientModule {
 
     @Provides
-    fun provideOkHttpClient(@ApplicationContext context: Context) : OkHttpClient {
+    fun provideOkHttpClient(@ApplicationContext context: Context): OkHttpClient {
         return OkHttpClient(context)
     }
 }
